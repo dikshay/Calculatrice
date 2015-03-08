@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidprojects.dikshay.calculator2" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/calculator"
+        android:label="@string/app_name"
+        android:theme="@style/myAppTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Calculator"
+                  android:label="Calculator2"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+    </application>
+
+</manifest>

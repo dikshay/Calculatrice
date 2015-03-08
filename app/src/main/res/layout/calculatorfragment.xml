@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+            <FrameLayout
+                android:id="@+id/frame_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+            </FrameLayout>
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="37dp"
+                android:text="0" />
+
+
+
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignBaseline="@+id/button1"
+                android:layout_alignBottom="@+id/button1"
+                android:layout_toRightOf="@+id/button1"
+                android:text="."
+                android:background="#1E88E5"/>
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button3"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignBaseline="@+id/button2"
+                android:layout_alignBottom="@+id/button2"
+                android:layout_toRightOf="@+id/button2"
+                android:text="+" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button4"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignBaseline="@+id/button3"
+                android:layout_alignBottom="@+id/button3"
+                android:layout_toRightOf="@+id/button3"
+                android:text="=" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button5"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_above="@+id/button1"
+                android:layout_alignLeft="@+id/button1"
+                android:text="1" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button6"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignBaseline="@+id/button5"
+                android:layout_alignBottom="@+id/button5"
+                android:layout_alignLeft="@+id/button2"
+                android:text="2" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button7"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignBaseline="@+id/button6"
+                android:layout_alignBottom="@+id/button6"
+                android:layout_alignLeft="@+id/button3"
+                android:text="3" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button8"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_above="@+id/button4"
+                android:layout_alignLeft="@+id/button4"
+                android:text="*" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button9"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_above="@+id/button5"
+                android:layout_alignLeft="@+id/button5"
+                android:text="4" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button10"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_above="@+id/button9"
+                android:layout_alignLeft="@+id/button9"
+                android:text="7" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button11"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignBaseline="@+id/button9"
+                android:layout_alignBottom="@+id/button9"
+                android:layout_toRightOf="@+id/button9"
+                android:text="5" />
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_above="@+id/button10"
+                android:layout_alignEnd="@+id/button12"
+                android:layout_alignRight="@+id/button12"
+                android:layout_alignParentLeft="true"
+                android:text="Clear"/>
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_toRightOf="@+id/clear"
+                android:layout_above="@+id/button14"
+                android:layout_alignEnd="@+id/button15"
+                android:layout_alignRight="@+id/button15"
+                android:text="Delete"
+                />
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button12"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignBottom="@+id/button10"
+                android:layout_toRightOf="@+id/button10"
+                android:text="8" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button13"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_above="@+id/button7"
+                android:layout_alignLeft="@+id/button7"
+                android:text="6" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button14"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignBaseline="@+id/button12"
+                android:layout_alignBottom="@+id/button12"
+                android:layout_toLeftOf="@+id/button8"
+                android:text="9" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button15"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignLeft="@+id/button8"
+                android:layout_alignTop="@+id/button14"
+                android:text="-" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button16"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignBaseline="@+id/button13"
+                android:layout_alignBottom="@+id/button13"
+                android:layout_alignLeft="@+id/button15"
+                android:text="/" />
+         <!--    <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="100dp"
+                 android:layout_below="@+id/textView2"
+                 android:textAppearance="?android:attr/textAppearanceLarge"
+                 android:text="Large Text"
+                 android:id="@+id/textView1"
+                 android:layout_alignRight="@+id/button15"
+                 android:layout_alignEnd="@+id/button15"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true">/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="100dp"
+        `        android:textAppearance="?android:attr/textAppearanceLarge"
+                 android:text="Large Text"
+                 android:id="@+id/textView2"
+                 android:layout_alignParentTop="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_alignRight="@+id/textView1"
+                 android:layout_alignEnd="@+id/textView1"/>-->
+           <TextView
+                android:id="@+id/editText1"
+                android:layout_below="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:layout_alignRight="@+id/button15"
+                android:layout_alignEnd="@+id/button15"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            </TextView>
+
+            <TextView
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/editText1"
+                android:layout_alignEnd="@+id/editText1"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>
